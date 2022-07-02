@@ -42,6 +42,9 @@ opplysningene. En hypotese er at SSB skal kunne få svar på sitt behov for info
 detaljerte bokføringen i form av den komplette SAF-T-filen, men isteden kunne formulere en maskinlesbar spørring
 inn mot filen, og få resultatene i retur.
 
+I skjermbildet nedenfor er det angitt at det er ønskelig med sum for transaksjonene som er bokført på 3000-kontoene (salg) og som er bilagsført i januar 2017, og nederst i bildet er svaret fra API-et:
+![Skjermbilde av forespørsel til og svar fra API-et](demo-snapshot.png)
+
 *Disclaimer*: Ikke se her for å lære beste praksis Python-koding ... Arbeidet følger rådet om å jobbe etter rekkefølgen
 "make it work, make it right, make it fast", og alt fokus er foreløpig på det første steget ...
 
