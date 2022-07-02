@@ -1,0 +1,44 @@
+norsk,engelsk,
+År,Transaction.PeriodYear 
+Periode,Transaction.Period
+Transaksjonstype,Transaction.TransactionType
+Kontonr.,
+Kontonavn,
+Kontotype,
+Inngående balanse,
+Utgående balanse,
+Bilagsnr.,Transaction.TransactionID
+Bilagstekst,Transaction.Description
+Linjenr.,Transaction.Line.ReferenceNumber
+Bilagsdato,
+Linjetekst,Transaction.Line.Description
+Beløp/Deb,Transaction.Line.DebitAmount.Amount
+Beløp/Kre,Transaction.Line.CreditAmount.Amount
+Beløp,
+Avgiftskode,Transaction.Line.TaxInformation.TaxCode
+Avgiftskodenavn,
+Avgiftsprosent,Transaction.Line.TaxInformation.TaxPercentage
+Avgiftsbeløp,Transaction.Line.TaxInformation.TaxAmount.Amount
+Avgiftsbasis,Transaction.Line.TaxInformation.TaxBase
+Avgiftsrapporteringsperiode,
+Dimensjonstype,Transaction.Line.Analysis.AnalysisType
+Dimensjonskode,Transaction.Line.Analysis.AnalysisID
+Dimensjonsbeløp,Transaction.Line.Analysis.AnalysisAmount.Amount
+Standard kontonr.,(mapper firesifret til tosifret kontokode)
+Grupperingskategori,
+Grupperingskode,
+Kundenr.,Transaction.Line.CustomerID  
+Kundenavn,
+Leverandørnr.,Transaction.Line.SupplierID
+Leverandørnavn,
+Kilde ID,
+Batch ID,
+System ID,
+Systemdato,
+Systemtid,
+Posteringsdato,
+Kildedokument ID,Transaction.Line.SourceDocumentID
+Referansenr.,
+KID,
+Forfalsdato,
+Antall,
