@@ -8,7 +8,7 @@ def analyse(
     to_date: str,
     from_and_included_account_id: int,
     to_account_id: int,
-    saftfile: str = '../saft.xml',
+    saftfile: str = 'saft.xml',
     ) -> dict:
 
     df = saft2dataframe(saftfile)
@@ -30,5 +30,5 @@ if __name__ == '__main__':
         to_date = '2017-02-01',
         from_and_included_account_id = 3000,
         to_account_id = 4000,
-        saftfile = '../saft.xml',        
+        saftfile = 'saft.xml',        
     ))

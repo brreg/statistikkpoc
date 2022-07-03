@@ -114,7 +114,7 @@ def process_transaction(transaction: ET.Element) -> List[dict]:
 
 
 if __name__ == '__main__':
-    df = saft2dataframe('../saft.xml')
+    df = saft2dataframe('saft.xml')
     print(df.describe())
     print(df.columns)
     print(df.info())
