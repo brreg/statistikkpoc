@@ -108,7 +108,7 @@ def process_transaction(transaction: ET.Element) -> List[dict]:
 
     else:
         for line in line_res:
-            resultat.append(transaction_res | line)        
+            resultat.append({**transaction_res, **line})        
 
     return resultat
 
