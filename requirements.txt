@@ -1,2 +1,4 @@
 fastapi
 pandas
+gunicorn==20.0.4
+uvicorn==0.11.7
