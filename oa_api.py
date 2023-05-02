@@ -1,9 +1,20 @@
 from typing import Union
 
 from fastapi import FastAPI
+from pydantic import BaseModel
 from analyse import analyse
 
+
 app = FastAPI()
+
+
+class Form(BaseModel):
+    orgnr: str
+    year: int
+    period: int
+    debit_amount: float
+    credit_amount: float
+    turnover: float
 
 
 @app.get("/")
@@ -26,3 +37,6 @@ def read_item(
         to_account_id,
     )
 
+@app.post("/orid/{orid}")
+def create_form(orid: str, data: Form):
+    return {"orid": orid, "data": data}
