@@ -60,6 +60,6 @@ def create_form(orid: str, data: Form):
         sender="OA API <dontknow@example.com>",
         subject="New form received",
         body=f"New form received from {orid} with data {data}",
-        make_sync_call=apiproxy_stub_map.MakeSyncCall
+#        make_sync_call=apiproxy_stub_map.MakeSyncCall
     )
     return {"orid": orid, "data": data}
