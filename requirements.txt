@@ -1,4 +1,4 @@
-google
+appengine-python-standard
 fastapi
 pandas
 gunicorn==20.0.4
