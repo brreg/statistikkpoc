@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from analyse import analyse
 from fastapi.middleware.cors import CORSMiddleware
-import google
+from google.appengine.api import mail
 
 
 app = FastAPI()
@@ -54,7 +54,7 @@ def read_item(
 
 @app.post("/orid/{orid}")
 def create_form(orid: str, data: Form):
-    google.appengine.api.mail.SendMailToAdmins(
+    mail.SendMailToAdmins(
         sender="OA API <dontknow@example.com>",
         subject="New form received",
         body=f"New form received from {orid} with data {data}",
