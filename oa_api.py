@@ -5,6 +5,8 @@ from pydantic import BaseModel
 from analyse import analyse
 from fastapi.middleware.cors import CORSMiddleware
 from google.appengine.api import mail
+from google.appengine.api import apiproxy_stub_map
+
 
 
 app = FastAPI()
@@ -58,5 +60,6 @@ def create_form(orid: str, data: Form):
         sender="OA API <dontknow@example.com>",
         subject="New form received",
         body=f"New form received from {orid} with data {data}",
+        make_sync_call=apiproxy_stub_map.MakeSyncCall
     )
     return {"orid": orid, "data": data}
